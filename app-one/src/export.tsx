@@ -18,14 +18,13 @@ export async function generateStaticParams() {
   return routes
 }
 
-// @ts-ignore
-export function Page({ params }) {
-  switch (params.slug) {
-    case "a":
-      return <A />
-    case "b":
-      return <B />
-    case "c":
-      return <C />
-  }
+export function Page({ params }: { params: { slug: string } }) {
+  return (
+    <div style={{ border: '1px solid', flex: 1, margin: '1rem', padding: '1rem' }}>
+      <p style={{ display: 'block' }}>app-one</p>
+      {params.slug === "a" && <A />}
+      {params.slug === "b" && <B />}
+      {params.slug === "c" && <C />}
+    </div>
+  )
 }

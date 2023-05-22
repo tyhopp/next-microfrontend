@@ -18,7 +18,8 @@ export default function Portal(): React.ReactElement {
   }, [])
 
   return (
-    <nav style={{ display: 'flex', flexDirection: 'column', width: '300px', height: '100vh', border: '1px solid' }}>
+    <nav style={{ display: 'flex', flexDirection: 'column', width: '300px', height: '100vh', border: '1px solid', margin: '1rem', padding: '1rem' }}>
+      <p>Portal</p>
       <ul>
         {items.map((item) => (
           <li>
