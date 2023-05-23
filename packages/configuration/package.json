@@ -1,0 +1,10 @@
+{
+  "name": "configuration",
+  "version": "0.1.0",
+  "description": "",
+  "files": [
+    "export.tsconfig.json",
+    "next.config.js",
+    "next.tsconfig.json"
+  ]
+}

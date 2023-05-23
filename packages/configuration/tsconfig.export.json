@@ -1,15 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "target": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "skipLibCheck": true,
     "strict": true,
-    "module": "ESNext",
+    "module": "esnext",
     "isolatedModules": true,
     "declaration": true,
     "jsx": "react-jsx",
-    "outDir": "export",
     "moduleResolution": "node"
-  },
-  "include": ["src/export.tsx"]
+  }
 }

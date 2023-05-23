@@ -1,0 +1,8 @@
+{
+  "extends": "../configuration/tsconfig.export.json",
+  "include": ["src/export.tsx"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "outDir": "export"
+  }
+}
