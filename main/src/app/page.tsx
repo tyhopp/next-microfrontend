@@ -1,5 +1,5 @@
-import Greeting from "./components/greeting"
-import Echo from "./components/echo"
+import Greeting from "./widgets/greeting"
+import Echo from "./widgets/echo"
 
 export default function IndexPage() {
   return (
