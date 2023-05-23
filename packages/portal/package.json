@@ -4,11 +4,9 @@
   "private": true,
   "main": "./export/export.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "export": "tsc --project tsconfig.export.json"
+    "build": "tsc --project tsconfig.export.json",
+    "dev": "tsc --project tsconfig.export.json --watch",
+    "dev:next": "next dev"
   },
   "dependencies": {
     "next": "13.4.3",
