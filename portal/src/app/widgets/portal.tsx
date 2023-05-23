@@ -13,7 +13,7 @@ export default function Portal(): React.ReactElement {
     // Example menu items
     setItems([
       { name: "app-one", href: "/app-one/a" },
-      { name: "app-two", href: "/app-two" }
+      { name: "app-two (does not really exist)", href: "/app-two" }
     ])
   }, [])
 
