@@ -8,8 +8,7 @@ The idea is applications can be separately developed and composed together in a 
 
 1. Clone this repository
 2. `npm install` to install dependencies
-3. `cd apps/main` to navigate to the main application
-4. `npm run dev` to run the main application locally
+3. `npm run dev` to run the main application locally
 
 ## Thoughts
 

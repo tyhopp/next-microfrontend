@@ -1,5 +1,5 @@
 {
-  "private": "true",
+  "private": true,
   "workspaces": [
     "apps/*",
     "packages/*"
@@ -12,6 +12,10 @@
     "node": ">=18.16.0"
   },
   "scripts": {
-    "export": "npm run export --workspaces --if-present"
+    "build": "turbo run build",
+    "dev": "turbo run dev"
+  },
+  "devDependencies": {
+    "turbo": "^1.9.8"
   }
 }
