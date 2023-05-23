@@ -7,22 +7,13 @@ The idea is applications can be separately developed and composed together in a 
 ## Usage
 
 1. Clone this repository
-
-> This repo is a pseudo-polyrepo, consider each directory is a separate repo in reality
-
-2. In both `app-one` and `portal`:
-  - `npm install` to install dependencies
-  - `npm run export` to compile the interface that is exported and consumed by the main application
-
-3. In `main`:
-  - `npm install` to install dependencies, including locally linked `app-one` and `portal`
-  - `npm run dev` to run the main app with sub-apps imported
-
-> For changes in `app-one` and `portal` to be reflected in `main`, you can use [npm link](https://docs.npmjs.com/cli/v9/commands/npm-link) to symlink them to `main`. You will need to run `npm run export` again for each change (or add a watch command).
+2. `npm install` to install dependencies
+3. `cd apps/main` to navigate to the main application
+4. `npm run dev` to run the main application locally
 
 ## Thoughts
 
-- The approach works, but integrating sub-applications and the main application by hand will be a problem at scale
+- The approach works, but integrating routes for sub-applications and the main application by hand could be a problem at scale
 - A tool could be written to automatically perform integration on a best-effort basis (and then manually intervene as needed after), but that requires sub-applications to strictly follow a determinable structure
 - Prior commits demonstrate that using Next.js' [generateStaticParams](https://nextjs.org/docs/app/api-reference/functions/generate-static-params) and [dynamic route segments](https://nextjs.org/docs/app/building-your-application/routing/defining-routes#dynamic-segments) APIs can be used to allow sub-apps to provide route creation logic. There are two problems in practice:
   - It is more magical than statically defined routes, which makes it less clear what routes are expected to exist, and less clear to integrate
