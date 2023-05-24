@@ -1,0 +1,30 @@
+{
+  "name": "design-system",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "files": [
+    "export"
+  ],
+  "main": "./export/index.js",
+  "module": "./export/index.js",
+  "exports": {
+    ".": {
+      "import": "./export/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "tsc --project tsconfig.export.json --watch",
+    "build": "tsc --project tsconfig.export.json"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.2.1",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "typescript": "5.0.4"
+  }
+}
