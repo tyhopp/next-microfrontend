@@ -7,8 +7,9 @@ The idea is applications can be separately developed and composed together in a 
 ## Usage
 
 1. Clone this repository
-2. `npm install` to install dependencies
-3. `npm run dev` to run the main application locally
+2. `npm install turbo --global` to install [Turborepo](https://turbo.build/repo/docs/installing) (per-project installs [destabilize lockfiles](https://github.com/vercel/turbo/issues/3328))
+3. `npm install` to install project dependencies
+4. `npm run dev` to run the main application locally
 
 ## Thoughts
 
