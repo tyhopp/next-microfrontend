@@ -1,10 +1,10 @@
 import * as React from 'react';
 
 function Example(): React.ReactElement {
-  const helloWorld = 'Hello World';
+  const example = 'This is a component from the design-system package';
 
   return (
-    <div>{helloWorld}</div>
+    <div className="font-bold text-blue-500">{example}</div>
   );
 }
 

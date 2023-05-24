@@ -1,4 +1,5 @@
 import { Portal } from "portal"
+import "design-system/main.css"
 
 export default function RootLayout({
   children,

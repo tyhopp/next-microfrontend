@@ -22,7 +22,7 @@ export default function Portal(): React.ReactElement {
       <p>Portal</p>
       <ul>
         {items.map((item) => (
-          <li>
+          <li key={item.href}>
             <Link href={item.href}>{item.name}</Link>
           </li>
         ))}

@@ -11,9 +11,9 @@
     "next": "13.4.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "app-one": "../../packages/app-one",
-    "configuration": "../../packages/configuration",
-    "portal": "../../packages/portal"
+    "app-one": "file:../../packages/app-one",
+    "configuration": "file:../../packages/configuration",
+    "portal": "file:../../packages/portal"
   },
   "devDependencies": {
     "@types/node": "20.2.1",

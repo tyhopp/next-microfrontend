@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "files": [
-    "export.tsconfig.json",
     "next.config.js",
-    "next.tsconfig.json"
+    "tsconfig.export.json",
+    "tsconfig.next.json"
   ]
 }
